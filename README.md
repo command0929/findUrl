@@ -13,12 +13,12 @@
 > # example.js
 >
 > ```js
->const findUrl = require("findUrl");
+>const Find = require("findUrl");
 >
 >
 > function response(room, msg, sender, isGroupChat, replier, imageDB, packageName) {
 > 
-> const data = findUrl(msg);
+> const Find = findUrl(msg);
 >
 > if(0 < data.length) replier.reply("《  URL detect v4 》" + "\u200b".repeat(500) + "\n\n" + data.map(e => "url : " + e.url + " ( " + e.title + " )").join("\n"));
 >
